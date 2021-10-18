@@ -41,7 +41,7 @@ public class HomeScreen extends AppCompatActivity {
 
         DBHelper dbHelper = new DBHelper(sqLiteDatabase);
 
-        notes = dbHelper.readNotes(username);
+        //notes = dbHelper.readNotes(username);
 
         System.out.println("note size:"+ notes.size());
         if(noteid != -1) {
@@ -54,6 +54,7 @@ public class HomeScreen extends AppCompatActivity {
                 listView.setAdapter(adapter);
 
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                         Intent intent = new Intent(getApplicationContext(), Notes.class);
