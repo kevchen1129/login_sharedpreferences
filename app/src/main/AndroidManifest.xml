@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Build_login">
         <activity
+            android:name=".Notes"
+            android:exported="true" />
+        <activity
             android:name=".HomeScreen"
             android:exported="true" />
         <activity

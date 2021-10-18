@@ -16,9 +16,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    SharedPreferences sharedPreferences;
-
-
 
 
     public void clickFunction(View view){
