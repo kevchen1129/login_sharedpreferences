@@ -1,4 +1,4 @@
-package com.example.build_login;
+package com.example.notes;
 
 import android.content.Context;
 
