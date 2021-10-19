@@ -44,6 +44,7 @@ public class ThirdActivity extends AppCompatActivity {
             // Display content of note by retrieving "notes" ArrayList in SecondActivity
             Note note = ResultActivity.notes.get(id);
             String noteContent = note.getContent();
+            noteid = id;
             // Use editText.setText() to display the contents of this note on screen
             newNoteText.setText(noteContent);
         }

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String usernameKey = "username";
-        SharedPreferences sharedPreferences = getSharedPreferences("com.example.note", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("com.example.notes", Context.MODE_PRIVATE);
         if (!sharedPreferences.getString(usernameKey, "").equals("")){
             String user = sharedPreferences.getString(usernameKey, "");
             goToResultPage(user);
